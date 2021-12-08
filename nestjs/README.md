@@ -1,10 +1,10 @@
-# Imersão fullstack && fullcycle 5 - Backend de processamento das transações feito com Golang
+# Imersão fullstack && fullcycle 5 - Back-end das ordens de pagamento
 
 ## Descrição
 
-Repositório do back-end de processamento das transações feito com Golang
+Repositório do back-end das ordens de pagamento feito com Nest.js
 
-**Importante**: A aplicação do Apache Kafka deve estar rodando primeiro.
+**Importante**: A aplicação do Apache Kafka e Golang deve estar rodando primeiro.
 
 ## Rodar a aplicação
 
@@ -27,4 +27,4 @@ Execute os comandos:
 docker compose up
 ```
 
-_Use o Apache Kafka para produzir e consumir mensagens para testar a aplicação._
+Acessar http://localhost:3000. Use os arquivos `accounts.http` e `orders.http` para testar a API.

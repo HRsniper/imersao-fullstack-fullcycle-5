@@ -1,12 +1,10 @@
-# Imersão fullstack && fullcycle 5 - Backend de processamento das transações feito com Golang
+# Imersão fullstack && fullcycle 5 - Front-end das ordens de pagamento
 
 ## Descrição
 
-Repositório do back-end de processamento das transações feito com Golang
+Repositório do front-end das ordens de pagamento feito com Next.js
 
-**Importante**: A aplicação do Apache Kafka deve estar rodando primeiro.
-
-## Rodar a aplicação
+**Importante**: A aplicação do Apache Kafka, Golang e Nest.js deve estar rodando primeiro.
 
 ### Configurar /etc/hosts
 
@@ -23,8 +21,8 @@ Em todos os sistemas operacionais é necessário abrir o programa para editar o 
 
 Execute os comandos:
 
-```bash
+```
 docker compose up
 ```
 
-_Use o Apache Kafka para produzir e consumir mensagens para testar a aplicação._
+Acessar http://host.docker.internal:3001.
