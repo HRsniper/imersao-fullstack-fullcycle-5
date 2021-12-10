@@ -15,7 +15,7 @@ const LoginPage = () => {
       router.push("/orders");
     } catch (e) {
       console.error(e);
-      alert("Login deu zebra!!");
+      alert("Erro ao Logar!");
     }
   }
 
