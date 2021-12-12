@@ -1,0 +1,14 @@
+# Multi-stage docker build
+
+# Builder image
+FROM golang:1.17 as builder
+WORKDIR /go/src
+COPY . .
+RUN apt-get update && apt-get install build-essential librdkafka-dev -y
+RUN go build -o /go/bin/gateway cmd/main.go
+
+# Final image for end users
+FROM alpine:3.15
+WORKDIR /go/src
+COPY --from=builder /go/bin/gateway .
+CMD ["/go/bin/gateway"]

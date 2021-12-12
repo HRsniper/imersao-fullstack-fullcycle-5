@@ -18,8 +18,7 @@ Acrescente no seu /etc/hosts (para Windows o caminho é C:\Windows\system32\driv
 ```
 127.0.0.1 host.docker.internal
 ```
-
-Em todos os sistemas operacionais é necessário abrir o programa para editar o _hosts_ como Administrator da máquina ou root.
+Em todos os sistemas operacionais é necessário abrir o programa para editar o *hosts* como Administrator da máquina ou root.
 
 Execute os comandos:
 
@@ -27,4 +26,4 @@ Execute os comandos:
 docker compose up
 ```
 
-_Use o Apache Kafka para produzir e consumir mensagens para testar a aplicação._
+Use o Apache Kafka para produzir e consumir mensagens para testar a aplicação.

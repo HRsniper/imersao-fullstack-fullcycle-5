@@ -40,7 +40,7 @@ func (p *Producer) Publish(msg interface{}, key []byte, topic string) error {
 
 	err = producer.Produce(message, nil)
 	if err != nil {
-		return err
+		panic(err)
 	}
 
 	return nil
