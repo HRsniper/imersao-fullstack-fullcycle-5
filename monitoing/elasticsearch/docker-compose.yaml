@@ -20,6 +20,6 @@ services:
         soft: -1
         hard: -1
     volumes:
-      - ./es01:/usr/share/elasticsearch/data
+      - ./elastic-data:/usr/share/elasticsearch/data
     extra_hosts:
       - "host.docker.internal:172.17.0.1"

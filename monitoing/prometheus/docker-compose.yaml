@@ -8,6 +8,9 @@ services:
     ports:
       - 9090:9090
     volumes:
-      - ./config/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./config:/etc/prometheus
+      - ./prometheus-data:/prometheus
     extra_hosts:
       - "host.docker.internal:172.17.0.1"
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
