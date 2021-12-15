@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  prometheus:
+    image: prom/prometheus:v2.32.0
+    # build: .
+    container_name: prometheus
+    ports:
+      - 9090:9090
+    volumes:
+      - ./config/prometheus.yml:/etc/prometheus/prometheus.yml
+    extra_hosts:
+      - "host.docker.internal:172.17.0.1"

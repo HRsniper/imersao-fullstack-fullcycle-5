@@ -2,9 +2,20 @@
 
 ## Ordem recomendada de execução
 
-* Apache Kafka
-* Golang
-* Back-end Nest.js
-* Front-end Next.js
+- Apache Kafka
+- Golang
+- Back-end Nest.js
+- Front-end Next.js
 
-![Dinamica](dinamica-sistema.jpg)
+## Diagramas
+
+- [Diagrama simples](#diagrama-simples)
+- [Diagrama c4](#diagrama-c4)
+
+### Diagrama simples
+
+![dinamica](dynamics-system.jpg)
+
+### Diagrama c4
+
+![dinamica-c4](dynamics-system-c4.jpg)
